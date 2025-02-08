@@ -1,0 +1,33 @@
+.gradient-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+.spill-effect {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle at center, #ff5f6d, #ffc371, transparent);
+  filter: blur(150px);
+  transform: translate(-50%, -50%);
+  /* Reduced duration and increased scale change for more pulsation */
+  animation: pulse 10s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+}
