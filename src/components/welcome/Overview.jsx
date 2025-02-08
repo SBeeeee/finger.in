@@ -13,21 +13,16 @@ const Overview = () => {
         {/* Content */}
         <div className="relative md:w-1/2 mb-5 z-10 mt-10">
           <h2 className="text-3xl md:text-4xl font-logo font-bold bg-gradient-to-r from-[#FF5F6D] to-[#FFC371] bg-clip-text text-transparent">
-            Forensic Fingerprint
+          Fingerprint Spoofing
           </h2>
           <h2 className="text-3xl md:text-4xl font-logo font-bold bg-gradient-to-r from-[#FF5F6D] to-[#FFC371] bg-clip-text text-transparent mb-4">
-            Analysis Redefined
+          is a Growing Concern
           </h2>
           <p className="text-[#aaaaaa] text-lg leading-relaxed font-body">
-            Experience a groundbreaking approach to fingerprint detection powered
-            by advanced deep learning. Our system delivers real-time forensic
-            insights with unprecedented accuracy and speed, capturing every
-            minute detail and transforming it into actionable intelligence.
+          Fraudsters are using synthetic fingerprints to bypass biometric security, leading to identity theft, financial fraud, and compromised access control.
           </p>
           <p className="text-[#aaaaaa] text-lg leading-relaxed mt-4 font-body">
-            At the same time, a refined UI design ensures sleek, minimal, and
-            powerful interactions that put aesthetics front and center—
-            revolutionizing the way forensic evidence is analyzed.
+          Conventional fingerprint scanners lack the intelligence to differentiate between real and spoofed prints, leaving security gaps in critical systems.
           </p>
         </div>
 

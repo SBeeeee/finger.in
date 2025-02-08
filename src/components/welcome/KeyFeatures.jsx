@@ -25,7 +25,7 @@ const features = [
 
 const KeyFeatures = () => {
   return (
-    <section className="bg-black/90 text-white py-16 px-8 font-body">
+    <section id="KeyFeatures" className="bg-black/90 text-white py-16 px-8 font-body">
       <div className="text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FF5F6D] to-[#FFC371] font-heading">
           Key Features: Designed For You
