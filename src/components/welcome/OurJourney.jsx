@@ -2,30 +2,30 @@ import React from "react";
 
 const timelineItems = [
   {
-    title: "About Us",
+    title: "Understanding Fingerprint Spoofing",
     description:
-      "We are pioneers in redefining digital experiences with cutting-edge technology and innovative solutions. Our expertise blends art and science into visually stunning, highly functional designs.",
-    align: "left", // Keeps it on the left
+      "Fingerprint spoofing involves creating fake fingerprints using materials like silicone or gelatin to deceive biometric security systems.",
+    align: "left",
   },
   {
-    title: "Projects",
+    title: "Detecting Fake Fingerprints",
     description:
-      "Explore our innovative projects that push the boundaries of technology and design. Each project is a unique blend of creativity and precision, transforming ideas into digital masterpieces.",
-    align: "right", // Ensures it moves to the right
+      "Advanced security techniques such as liveness detection, multispectral imaging, and AI-driven anomaly analysis help identify counterfeit fingerprints.",
+    align: "right",
   },
   {
-    title: "Fingerprint Spoofing",
+    title: "Enhancing Biometric Security",
     description:
-      "Fingerprint spoofing involves crafting a fake fingerprint that tricks biometric scanners into accepting it as genuine. Materials like silicone, gelatin, or conductive inks are used to mimic the intricate patterns of a real fingerprint. Modern biometric systems incorporate advanced liveness detection, multispectral imaging, and countermeasures.",
-    align: "left", // Moves it back to the left
+      "Ongoing research in AI and biometric analysis continues to improve fingerprint recognition, making it more secure against spoofing attempts.",
+    align: "left",
   },
 ];
 
 const OurJourney = () => {
   return (
-    <section id="our-journey" className="py-16 px-8 text-center bg-black/90">
+    <section id="our-journey" className="py-16 px-8 text-center bg-black/90 font-body">
       <h2
-        className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-orange-500"
+        className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-orange-500 font-logo"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
@@ -48,7 +48,7 @@ const OurJourney = () => {
               data-aos-duration="1000"
             >
               {/* Timeline Dot (Centered on Line) */}
-              <div className="absolute left-1/2 w-6 h-6 bg-gradient-to-r from-red-400 to-orange-500 border-4 border-black rounded-full transform -translate-x-1/2 "></div>
+              <div className="absolute left-1/2 w-6 h-6 bg-gradient-to-r from-[#FF5F6D] to-[#FFC371] border-4 border-black rounded-full transform -translate-x-1/2"></div>
 
               {/* Timeline Card */}
               <div
@@ -56,8 +56,8 @@ const OurJourney = () => {
                   item.align === "right" ? "ml-auto" : "mr-auto"
                 }`}
               >
-                <h3 className="text-xl font-bold text-white">{item.title}</h3>
-                <p className="text-gray-400 mt-2">{item.description}</p>
+                <h3 className="text-xl font-bold text-white font-logo">{item.title}</h3>
+                <p className="text-gray-400 mt-2 font-body">{item.description}</p>
               </div>
             </div>
           ))}

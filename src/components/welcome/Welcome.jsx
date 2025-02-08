@@ -16,7 +16,6 @@ const Welcome = () => {
       <Overview/>
       <KeyFeatures/>
       <OurJourney/>
-      <Login/>
     </div>
   )
 }
