@@ -1,30 +1,36 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 const Navbar = () => {
   useEffect(() => {
-    const navLinks = document.querySelectorAll('.nav-link');
-    const sections = document.querySelectorAll('header, section');
+    const navLinks = document.querySelectorAll(".nav-link");
+    const sections = document.querySelectorAll("header, section");
 
-    const observerOptions = { threshold: 0.3 };
+    const observerOptions = { threshold: 0.5 }; // Adjusting threshold for better accuracy
+
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          navLinks.forEach(link => link.classList.remove('active'));
-          const activeLink = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
-          if (activeLink) activeLink.classList.add('active');
+          // Remove active class from all links
+          navLinks.forEach((link) => link.classList.remove("active"));
+
+          // Find and add active class to the corresponding nav link
+          const activeLink = document.querySelector(
+            `.nav-link[href="#${entry.target.id}"]`
+          );
+          if (activeLink) activeLink.classList.add("active");
         }
       });
     }, observerOptions);
 
-    sections.forEach(sec => observer.observe(sec));
+    // Observe each section
+    sections.forEach((sec) => observer.observe(sec));
 
-    return () => observer.disconnect();
+    return () => observer.disconnect(); // Cleanup on unmount
   }, []);
 
   return (
     <nav className="fixed top-5 left-1/2 transform -translate-x-1/2 bg-black/50 backdrop-blur rounded-[50px] z-[999] py-3 px-8">
       <div className="max-w-[1200px] mx-auto px-6">
-        {/* Apply the custom body font to all nav links */}
         <ul className="flex gap-8 font-body">
           <li>
             <a
