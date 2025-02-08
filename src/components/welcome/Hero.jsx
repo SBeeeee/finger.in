@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import TextPressure from '../../effects/TextPressure';
+import { Link } from 'react-router-dom';
 const Hero = () => {
   const sentences = [
     "CHANGE YOUR PERSPECTIVE",
@@ -87,9 +88,8 @@ const Hero = () => {
         </p>
         <button
           className="btn-hero glow border-2 border-white py-2 px-6 rounded-full text-lg font-body transition-all duration-300 hover:bg-white hover:text-black hover:-translate-y-1 shadow-lg"
-          onClick={handleGetStarted}
         >
-          Get Started
+          <Link to="/Login">Get Started</Link>
         </button>
       </div>
     </div>
