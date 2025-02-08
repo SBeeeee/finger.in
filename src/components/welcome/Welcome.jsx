@@ -5,6 +5,7 @@ import GradientBackground from './GradientBackground'
 import Overview from './Overview'
 import KeyFeatures from './KeyFeatures'
 import OurJourney from './OurJourney'
+import Login from '../Login/Login'
 
 const Welcome = () => {
   return (
