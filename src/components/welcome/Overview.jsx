@@ -1,6 +1,6 @@
 import React from "react";
 import detectiveGif from "../../assets/detective.gif"; // Adjust path if needed
-
+import logo from '../../assets/logo.jpg';
 const Overview = () => {
   return (
     <div className=" bg-black/90 px-8 md:px-16 relative min-h-screen">
@@ -40,7 +40,7 @@ const Overview = () => {
         className="flex items-center">
         <div className="hidden md:block mt-10">
           <img
-            src=""
+            src={logo}
             alt="Detective Analysis"
             className="w-full h-96 rounded-lg shadow-lg bg-transparent"
           />

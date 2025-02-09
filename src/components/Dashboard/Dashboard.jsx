@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import GradientBackground from "../BackgroundGardient/GradientBackground";
 
 const Dashboard = () => {
   const { user, logout } = useAuth();
@@ -28,10 +29,8 @@ const Dashboard = () => {
     }
   };
 
-  // Simulate fingerprint processing (replace with your actual processing logic)
   const processFingerprint = (file) => {
     setIsProcessing(true);
-    // Simulated processing delay (e.g., 3 seconds)
     setTimeout(() => {
       setResult({
         message: "Fingerprint processed successfully!",
@@ -42,7 +41,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center p-10 space-y-10">
+    <div className="min-h-screen bg-black/90 text-white flex flex-col items-center p-10 space-y-10">
       {/* Header Section */}
       <div className="w-full flex flex-col md:flex-row justify-between items-center max-w-4xl">
         <h1 className="text-3xl font-bold mb-4 md:mb-0">
