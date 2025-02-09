@@ -3,7 +3,7 @@ import madhav from '../../assets/madhav.jpg';
 import soham from '../../assets/soham.jpg';
 import shatadru from '../../assets/shatadru.jpg';
 import anshul from '../../assets/anshul.jpg';
-
+import lakshya from '../../assets/lakshya.jpg'
 const teamMembers = [
     {
         id: 1,
@@ -27,7 +27,7 @@ const teamMembers = [
         id: 4,
         name: 'Lakshya Gupta',
         position: 'Front-end Developer',
-        image: 'https://via.placeholder.com/150',
+        image: lakshya,
     },
     {
         id: 5,
