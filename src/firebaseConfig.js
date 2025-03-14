@@ -3,7 +3,7 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyChe3ic36VRE20yzVt5JHomqwjO1kx1LpM",
+  apiKey: "your google apikey",
   authDomain: "login-for-fingerin.firebaseapp.com",
   projectId: "login-for-fingerin",
   storageBucket: "login-for-fingerin.firebasestorage.app",
